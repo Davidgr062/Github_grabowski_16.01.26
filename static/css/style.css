@@ -1,0 +1,72 @@
+body { 
+    background-color: #000000;
+    margin: 0;
+    height: 100vh;             /* volle Höhe des Bildschirms */
+    display: flex;
+    justify-content: flex-start; /* Text links */
+    align-items: center;        /* vertikal zentrieren */
+    padding-left: 50px;         /* Abstand vom linken Rand */
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;              /* Text und Bild nebeneinander */
+    align-items: center;        /* vertikal ausrichten */
+    gap: 20px;                  /* Abstand zwischen Text und Bild */
+}
+
+.hero h1 {
+    color: rgb(255, 255, 255);    
+    letter-spacing: 0.1em;
+    font-size: 4rem;           /* große Überschrift */
+    margin: 0;  
+}
+
+.hero img {
+    width: 80px;                /* Bildgröße einschränken */
+    height: auto;
+    display: block;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column; /* übereinander */
+  gap: 30px;              /* größerer Abstand */
+  text-align: center; /* rechtsbündig */
+}
+
+.box {
+  display: block;
+  padding: 35px 50px;     /* größer gemacht */
+  border: 2px solid #fff; /* Umrahmung */
+  text-decoration: none;  /* Link-Style entfernen */
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;      /* größerer Text */
+  
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Hero links, Boxen rechts */
+  align-items: center;            /* vertikal mittig */
+  height: 100%;
+  padding:  50px;
+  box-sizing: border-box;
+}
+
+.left {
+    color: rgb(255, 255, 255);    
+    flex: 1;                 /* nimmt die Hälfte des Containers ein */
+    background-color: #000000;
+    padding: 20px;
+}
+
+/* Rechte Spalte */
+.right {
+    color: rgb(255, 255, 255);    
+    flex: 1;                 /* nimmt die andere Hälfte ein */
+    background-color: #000000;
+    padding: 20px;
+}
